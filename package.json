@@ -1,0 +1,16 @@
+{
+  "name": "dsctracker",
+  "version": "0.0.1",
+  "description": "Tracks packages and sends alerts via discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jkcgs",
+  "license": "WTFPL",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "discord.js": "^11.1.0",
+    "request": "^2.81.0"
+  }
+}
