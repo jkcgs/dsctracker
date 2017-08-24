@@ -39,15 +39,18 @@ function loop() {
         if(count >= config.codes.length) {
             count = 0;
             if(updated) {
-                console.log('listo por ahora, esperando...');
+                console.log('listo por ahora, esperando 60 segs...');
                 updated = false;
             }
-            setTimeout(loop, 10000);
+            setTimeout(loop, 60000);
         } else {
             loop();
         }
     }).catch(err => {
         console.error(err);
+        count--;
+        console.error('esperando 10 segs...');
+        setTimeout(loop, 10000);
     });
 }
 
