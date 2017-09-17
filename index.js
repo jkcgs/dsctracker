@@ -48,6 +48,7 @@ function loop() {
         }
     }).catch(err => {
         if(err === 'notfound') {
+            loop();
             return;
         }
         
