@@ -47,6 +47,10 @@ function loop() {
             loop();
         }
     }).catch(err => {
+        if(err === 'notfound') {
+            return;
+        }
+        
         console.error(err);
         count--;
         console.error('esperando 10 segs...');
